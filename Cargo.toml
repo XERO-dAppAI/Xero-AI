@@ -1,0 +1,5 @@
+[workspace]
+members = [
+    "src/xero_ai_project_backend"
+]
+resolver = "2"

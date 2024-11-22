@@ -1,0 +1,27 @@
+{
+  "canisters": {
+    "xero_ai_project_backend": {
+      "candid": "src/xero_ai_project_backend/xero_ai_project_backend.did",
+      "package": "xero_ai_project_backend",
+      "type": "rust"
+    },
+    "xero_ai_project_frontend": {
+      "dependencies": [
+        "xero_ai_project_backend"
+      ],
+      "source": [
+        "src/xero_ai_project_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "xero_ai_project_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
