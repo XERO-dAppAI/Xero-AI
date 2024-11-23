@@ -1,19 +1,36 @@
 {
   "canisters": {
-    "xero_ai_project_backend": {
-      "candid": "src/xero_ai_project_backend/xero_ai_project_backend.did",
-      "package": "xero_ai_project_backend",
-      "type": "rust"
-    },
     "xero_ai_project_frontend": {
-      "dependencies": [
-        "xero_ai_project_backend"
-      ],
+      "dependencies": [],
       "source": [
         "src/xero_ai_project_frontend/dist"
       ],
       "type": "assets",
       "workspace": "xero_ai_project_frontend"
+    },
+    "ai_demand_forecasting": {
+      "type": "rust",
+      "package": "ai_demand_forecasting",
+      "source": [
+        "src/ai_demand_forecasting"
+      ],
+      "candid": "src/ai_demand_forecasting/ai_demand_forecasting.did"
+    },
+    "expiration_risk_analysis": {
+      "type": "rust",
+      "package": "expiration_risk_analysis",
+      "source": [
+        "src/expiration_risk_analysis"
+      ],
+      "candid": "src/expiration_risk_analysis/expiration_risk_analysis.did"
+    },
+    "anomaly_detection": {
+      "type": "rust",
+      "package": "anomaly_detection",
+      "source": [
+        "src/anomaly_detection"
+      ],
+      "candid": "src/anomaly_detection/anomaly_detection.did"
     }
   },
   "defaults": {
