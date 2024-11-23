@@ -1,0 +1,3 @@
+service : {
+  "analyze_risk": () -> (text) query;
+}
